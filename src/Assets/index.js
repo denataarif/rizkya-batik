@@ -26,6 +26,10 @@ import Srikandi3 from './Img/image 56.svg'
 import Srikandi4 from './Img/image 57.svg'
 import Srikandi5 from './Img/image 58.svg'
 import Srikandi6 from './Img/image 50.svg'
+import Background_Sekar from './Img/1684120491751-31.svg'
+import why1 from './Img/image60.svg'
+import why2 from './Img/image61.svg'
+import why3 from './Img/image62.svg'
 
 const assets = {
     Logo,
@@ -55,7 +59,11 @@ const assets = {
     Srikandi3,
     Srikandi4,
     Srikandi5,
-    Srikandi6
+    Srikandi6,
+    Background_Sekar,
+    why1,
+    why2,
+    why3,
 }
 
 export default assets

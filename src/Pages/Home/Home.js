@@ -95,6 +95,38 @@ const Home = () => {
             </div>
           </div>
         </section>
+        <section>
+          <img src={assets.Background_Sekar} alt='sekar wungu'/>
+        </section>
+        <section className='flex flex-col justify-center items-center gap-y-6'>
+          <Typhograph children="WHY RIZKYA BATIK ?" className="font-bold text-center text-5xl"/>
+          <div className='flex justify-center items-center'>
+          
+            <div className='flex relative'>
+              <img src={assets.why2} alt='' className=' w-60'/>
+              <div className='absolute flex flex-col justify-center items-center text-center bottom-[5%] left-0 right-0'>
+                <Typhograph children="KUALITAS" className="font-bold text-2xl text-white"/>
+                <Typhograph children="TERJAMIN"className="font-bold text-2xl text-white -mt-3"/>
+              </div>
+            </div>
+
+            <div className='flex relative'>
+              <img src={assets.why3} alt='' className=' w-60'/>
+              <div className='absolute flex flex-col justify-center items-center text-center bottom-[5%] left-0 right-0'>
+                <Typhograph children="KEMUDAHAN" className="font-bold text-2xl text-white"/>
+                <Typhograph children="TRANSAKSI"className="font-bold text-2xl text-white -mt-3"/>
+              </div>
+            </div>
+
+            <div className='flex relative'>
+              <img src={assets.why1} alt='' className=' w-60'/>
+              <div className='absolute flex flex-col justify-center items-center text-center bottom-[5%] left-0 right-0'>
+                <Typhograph children="PELAYANAN" className="font-bold text-2xl text-white"/>
+                <Typhograph children="RAMAH"className="font-bold text-2xl text-white -mt-3"/>
+              </div>
+            </div>
+          </div>
+        </section>
       </div>
     </>
   )
