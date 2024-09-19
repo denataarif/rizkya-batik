@@ -3,7 +3,7 @@ import assets from '../../../Assets'
 import Typhograph from '../../atoms/Typhograph/Typhograph'
 import Select from '../../atoms/Select/Select'
 const Navbar = () => {
-  const [isHover, Setishover] = useState(false)
+  const [Dropdown, setDropdown] = useState(false)
   const Catagories = ["NEW IN", "WOMEN", "MEN", "REGULAR COLLECTION", "DRESS", "OUTWEAR"]
   return (
     <>
@@ -13,21 +13,9 @@ const Navbar = () => {
                 <Typhograph children="NEW DROP" className="text-primary hover:text-isActive hover:cursor-pointer"/>
                 <Typhograph children="SHOP ALL" className="text-primary hover:text-isActive hover:cursor-pointer"/>
                 <Typhograph children="HIGHLIGHT" className="text-primary hover:text-isActive hover:cursor-pointer"/>
-                <div className='flex gap-x-2 items-center hover:cursor-pointer text-primary hover:text-isActive focus:text-isActive'>
-                  <select name="" id="" className='bg-transparent border-none hover:border-none focus:outline-none active:outline-none font-normal' >
-                    <option selected hidden >CATAGOREIS</option>
-                    {
-                      Catagories.map((items, index) => {
-                        return(
-                          <option key={index} className='bg-black'>
-                            {items}
-                          </option>
-                        )
-                      })
-                    }
-                  </select>
+                <div className='hover:cursor-pointer text-primary '   onClick={() => setDropdown(!Dropdown)}>
+                  <Select label="CATAGORIES" Catagories={Catagories} Toggle={Dropdown}/>
                 </div>
-                <Select/>
             </div>
             <div className="Icons flex justify-between items-center gap-x-6">
                 <img src={assets.Search} alt="Icon-Search" className='h-6 w-6'/>
