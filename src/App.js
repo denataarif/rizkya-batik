@@ -1,4 +1,5 @@
 import Navbar from "./Component/molecules/Navbar/Navbar";
+import Home from "./Pages/Home/Home";
 
 
 function App() {
@@ -6,6 +7,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <Navbar/>
+        <Home/>
       </header>
     </div>
   );
