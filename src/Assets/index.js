@@ -30,7 +30,7 @@ import Background_Sekar from './Img/1684120491751-31.svg'
 import why1 from './Img/image60.svg'
 import why2 from './Img/image61.svg'
 import why3 from './Img/image62.svg'
-
+import story from './Img/image 104.svg'
 const assets = {
     Logo,
     Search,
@@ -64,6 +64,7 @@ const assets = {
     why1,
     why2,
     why3,
+    story
 }
 
 export default assets

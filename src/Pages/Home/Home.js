@@ -127,6 +127,18 @@ const Home = () => {
             </div>
           </div>
         </section>
+        <section className='bg-[#1E1D1C] p-8'>
+          <div className='flex justify-center items-center gap-x-20'>
+            <div className='flex flex-col size-64 '>
+              <Typhograph children="RIZKYA'S" className="text-5xl font-bold text-[#82807D]"/>
+              <Typhograph children="STORY" className="text-4xl font-bold -mt-3"/>
+              <Typhograph children="Owner Rizkya Batik yaitu Ibu Dra. Dwi Hendrarti yang kerap disapa dengan Ibu Hetty Rizkya mendapatkan undangan Talkshow di Thamrin City,Jakarta pada 2 Oktober 2023."/>
+            </div>
+            <div>
+              <img src={assets.story} alt="" className='size-80'/>
+            </div>
+          </div>
+        </section>
       </div>
     </>
   )
