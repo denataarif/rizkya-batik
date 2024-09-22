@@ -1,6 +1,8 @@
 import React,{useRef, useEffect, useState} from 'react'
 import assets from '../../Assets'
 import Typhograph from '../../Component/atoms/Typhograph/Typhograph'
+import Footer from '../../Component/molecules/Footer/Footer'
+import Mainlayout from '../../Component/Organisms/Layout/Mainlayout'
 
 const Home = () => {
   const imgRef = useRef()
@@ -24,6 +26,7 @@ const Home = () => {
   }, [images.length])
   return (
     <>
+    <Mainlayout>
       <div className='flex flex-col gap-y-12 overflow-x-hidden'>
         <section>
           <img src={assets.Background} alt='background'/>
@@ -140,6 +143,7 @@ const Home = () => {
           </div>
         </section>
       </div>
+    </Mainlayout>
     </>
   )
 }
