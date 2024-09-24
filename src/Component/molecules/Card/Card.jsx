@@ -5,13 +5,15 @@ const Card = (props) => {
   const {Caption, Image, Harga} = props
     return (
     <>
+      <div className='flex flex-col '>
         <div>
             <img src={Image} alt="Iamge" />
         </div>
-        <div>
-            <Typhograph children={Caption}/>
-            <Typhograph children={Harga}/>
+        <div className='flex flex-col gap-1 mt-1'>
+            <Typhograph children={Caption} className="text-[#82807D] text-lg font-bold"/>
+            <Typhograph children={Harga} className="text-[#82807D] font-medium"/>
         </div>
+      </div>
     </>
   )
 }
