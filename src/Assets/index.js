@@ -31,6 +31,14 @@ import why1 from './Img/image60.svg'
 import why2 from './Img/image61.svg'
 import why3 from './Img/image62.svg'
 import story from './Img/image 104.svg'
+import Newcollector from './Img/image 73.svg'
+import Woman from './Img/image 74.svg'
+import Men from './Img/image 75.svg'
+import Dress from './Img/image 77.svg'
+import Outer from './Img/image 78.svg'
+import Blouse from './Img/image 79.svg'
+import set from './Img/image 80.svg'
+import Accessories from './Img/image 81.svg'
 const assets = {
     Logo,
     Search,
@@ -64,7 +72,15 @@ const assets = {
     why1,
     why2,
     why3,
-    story
+    story,
+    Newcollector,
+    Woman,
+    Men,
+    Dress,
+    Outer,
+    Blouse,
+    set,
+    Accessories
 }
 
 export default assets
