@@ -39,6 +39,11 @@ import Outer from './Img/image 78.svg'
 import Blouse from './Img/image 79.svg'
 import set from './Img/image 80.svg'
 import Accessories from './Img/image 81.svg'
+import ImgLogin from './Img/Group 15.svg'
+import IcClose from './Icons/Vector.svg'
+import IcEmail from './Icons/Vector1.svg'
+import IcPass from './Icons/Group.svg'
+
 const assets = {
     Logo,
     Search,
@@ -80,7 +85,11 @@ const assets = {
     Outer,
     Blouse,
     set,
-    Accessories
+    Accessories,
+    ImgLogin,
+    IcClose,
+    IcEmail,
+    IcPass
 }
 
 export default assets

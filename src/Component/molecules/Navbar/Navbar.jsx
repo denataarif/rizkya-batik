@@ -2,21 +2,34 @@ import React, { useState } from 'react'
 import assets from '../../../Assets'
 import Typhograph from '../../atoms/Typhograph/Typhograph'
 import Select from '../../atoms/Select/Select'
-const Navbar = () => {
+import { Link } from 'react-router-dom'
+const Navbar = ({modalLogin}) => {
   const [Dropdown, setDropdown] = useState(false)
   const [isSearch, setIsSeacrh] = useState(false)
   const Catagories = ["NEW IN", "WOMEN", "MEN", "REGULAR COLLECTION", "DRESS", "OUTWEAR"]
+ 
+
   return (
     <>
         <div className='w-full bg-black py-5 flex justify-around items-center '>
-            <div className="Logo rounded-[97px]"><img src={assets.Logo} alt='logo'className='w-[150px] h-[72px]'/></div>
+            <Link to="/">
+              <div className="Logo rounded-[97px]"><img src={assets.Logo} alt='logo'className='w-[150px] h-[72px]'/></div>
+            </Link>
             <div className="Catagories flex justify-around items-center gap-x-4">
-                <Typhograph children="NEW DROP" className="text-primary hover:text-isActive hover:cursor-pointer"/>
-                <Typhograph children="SHOP ALL" className="text-primary hover:text-isActive hover:cursor-pointer"/>
-                <Typhograph children="HIGHLIGHT" className="text-primary hover:text-isActive hover:cursor-pointer"/>
-                <div className='hover:cursor-pointer text-primary ' onClick={() => setDropdown(!Dropdown)}>
-                  <Select label="CATAGORIES" Catagories={Catagories} Toggle={Dropdown}/>
-                </div>
+                <Link to="/Newdrop">
+                  <Typhograph children="NEW DROP" className="text-primary hover:text-isActive hover:cursor-pointer"/>
+                </Link>
+                <Link to="/Shopall">
+                  <Typhograph children="SHOP ALL" className="text-primary hover:text-isActive hover:cursor-pointer"/>
+                </Link>
+                <Link to="/Highlight">
+                  <Typhograph children="HIGHLIGHT" className="text-primary hover:text-isActive hover:cursor-pointer"/>
+                </Link>
+                <Link to="/catagories">
+                  <div className='hover:cursor-pointer text-primary ' onClick={() => setDropdown(!Dropdown)}>
+                    <Select label="CATAGORIES" Catagories={Catagories} Toggle={Dropdown}/>
+                  </div>
+                </Link>
             </div>
             <div className="Icons flex justify-between items-center gap-x-6">
                 <div >
@@ -30,7 +43,9 @@ const Navbar = () => {
                   }
                 </div>
                 <img src={assets.Cart} alt="Icon-Cart" className='h-6 w-6'/>
-                <img src={assets.Profile} alt="Icon-Profile" className='h-6 w-6'/>
+                <div onClick={modalLogin} className='hover:cursor-pointer'>
+                  <img src={assets.Profile} alt="Icon-Profile" className='h-6 w-6'/>
+                </div>
             </div>
         </div>
     </>
