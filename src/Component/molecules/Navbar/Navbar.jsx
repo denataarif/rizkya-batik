@@ -3,7 +3,7 @@ import assets from '../../../Assets'
 import Typhograph from '../../atoms/Typhograph/Typhograph'
 import Select from '../../atoms/Select/Select'
 import { Link } from 'react-router-dom'
-const Navbar = ({modalLogin}) => {
+const Navbar = ({modalLogin, modalCart}) => {
   const [Dropdown, setDropdown] = useState(false)
   const [isSearch, setIsSeacrh] = useState(false)
   const Catagories = ["NEW IN", "WOMEN", "MEN", "REGULAR COLLECTION", "DRESS", "OUTWEAR"]
@@ -42,7 +42,9 @@ const Navbar = ({modalLogin}) => {
                     </div>
                   }
                 </div>
-                <img src={assets.Cart} alt="Icon-Cart" className='h-6 w-6'/>
+                <div onClick={modalCart} className='hover:cursor-pointer'>
+                  <img src={assets.Cart} alt="Icon-Cart" className='h-6 w-6'/>
+                </div>
                 <div onClick={modalLogin} className='hover:cursor-pointer'>
                   <img src={assets.Profile} alt="Icon-Profile" className='h-6 w-6'/>
                 </div>

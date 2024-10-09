@@ -29,7 +29,7 @@ const Home = () => {
     <Mainlayout>
       <div className='flex flex-col gap-y-12 overflow-x-hidden'>
         <section>
-          <img src={assets.Background} alt='background'/>
+          <img src={assets.Background} alt='background'className='w-full'/>
         </section>
         <section className='flex flex-col gap-y-6'>
           <Typhograph children="CURATED PICKS" className="font-bold text-center text-5xl"/>
@@ -67,8 +67,8 @@ const Home = () => {
          </div>
         </section>
         <section className='pb-12 bg-gradient-to-t from-[#C68913] to-[#F1F0EF]'>
-          <img src={assets.Aksamala} alt=''/>
-          <div className='flex'>
+          <img src={assets.Aksamala} alt='' className='w-full'/>
+          <div className='flex w-full justify-center items-center'>
             <img src={assets.Aksamala1} alt='' className='size-[340px]'/>
             <img src={assets.Aksamala2} alt='' className='size-[340px]'/>
             <img src={assets.Aksamala3} alt='' className='size-[340px]'/>
@@ -99,7 +99,7 @@ const Home = () => {
           </div>
         </section>
         <section>
-          <img src={assets.Background_Sekar} alt='sekar wungu'/>
+          <img src={assets.Background_Sekar} alt='sekar wungu' className='w-full'/>
         </section>
         <section className='flex flex-col justify-center items-center gap-y-6'>
           <Typhograph children="WHY RIZKYA BATIK ?" className="font-bold text-center text-5xl"/>
