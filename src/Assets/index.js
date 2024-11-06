@@ -44,6 +44,10 @@ import IcClose from "./Icons/Vector.svg";
 import IcEmail from "./Icons/Vector1.svg";
 import IcPass from "./Icons/Group.svg";
 import InnerMala from "./Img/image 89.svg";
+import BackSri1 from "./Img/image 46.png";
+import BackSri2 from "./Img/image 47.png";
+import BackSri3 from "./Img/image 52.png";
+import BackSri4 from "./Img/image 53.png";
 const assets = {
   Logo,
   Search,
@@ -91,6 +95,10 @@ const assets = {
   IcEmail,
   IcPass,
   InnerMala,
+  BackSri1,
+  BackSri2,
+  BackSri3,
+  BackSri4,
 };
 
 export default assets;

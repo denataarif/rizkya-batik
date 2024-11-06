@@ -6,10 +6,6 @@ import Button from "../../atoms/Button/Button";
 const ModalAddToCart = (props) => {
   const { isOpen, onClose } = props;
 
-  const [closeModal, setCloseModal] = useState(false);
-  const handleCloseModal = () => {
-    setCloseModal(!closeModal);
-  };
   return (
     <>
       <Modal isOpen={isOpen} onClose={onClose}>

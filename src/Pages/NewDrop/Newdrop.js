@@ -3,6 +3,7 @@ import Mainlayout from "../../Component/Organisms/Layout/Mainlayout";
 import Typhograph from "../../Component/atoms/Typhograph/Typhograph";
 import assets from "../../Assets";
 import Card from "../../Component/molecules/Card/Card";
+import ModalAddToCart from "../../Component/molecules/ModalAddtoCart/ModalAddToCart";
 
 const Newdrop = () => {
   const [modalAddToCart, setModalAddToCart] = useState(false);
@@ -166,6 +167,10 @@ const Newdrop = () => {
           </div>
         </div>
       </Mainlayout>
+      <ModalAddToCart
+        isOpen={modalAddToCart}
+        onClose={() => HandleModalAddToCart()}
+      />
     </>
   );
 };
